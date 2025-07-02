@@ -16,47 +16,56 @@ body {
 .header {
   background-color: #ffffff;
   padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #eaeaea;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
+.container.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo alineado verticalmente al centro */
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Menú horizontal */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .menu a {
-  margin-left: 1.5rem;
   text-decoration: none;
-  color: #333;
+  color: #222;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.menu a:hover {
-  color: #176d66;
-}
-
-.btn-primary {
+.menu .btn-primary {
   background: #176d66;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  text-decoration: none;
-  border: none;
-  font-weight: 600;
-  margin-left: 1rem;
+  font-weight: 500;
   transition: background 0.3s ease;
 }
 
-.btn-primary:hover {
+.menu .btn-primary:hover {
   background: #134f4a;
 }
+
 
 /* ===== Banner (Imagen de fondo debajo del header) ===== */
 .banner {
@@ -244,4 +253,30 @@ button.btn-primary {
 .footer .socials a:hover {
   color: #cccccc;
 }
+
+/* ===== Botones primarios (uniforme para <a> y <button>) ===== */
+.btn-primary,
+button.btn-primary {
+  background-color: #176d66;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+button.btn-primary:hover {
+  background-color: #134f4a;
+}
+
+
+
+
 
