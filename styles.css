@@ -130,19 +130,25 @@ body {
 /* ===== Testimonios y Formulario ===== */
 .testimonials-form {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
+
 
 .testimonials, .form {
   flex: 1;
 }
 
-.testimonials h2,
-.form h2 {
+.testimonials h2 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
+
 
 .testimonial {
   background: #fff;
@@ -170,6 +176,8 @@ body {
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
+
+
 .form input,
 .form textarea {
   width: 100%;
@@ -180,10 +188,18 @@ body {
   font-size: 1rem;
 }
 
+.form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
 .time-fields {
   display: flex;
   gap: 1rem;
 }
+
 
 button.btn-primary {
   width: 100%;
@@ -213,46 +229,56 @@ button.btn-primary {
   font-weight: 500;
 }
 
-/* ===== Contacto ===== */
+/* ===== Contacto Mejorado ===== */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .contact-info {
-  margin-bottom: 2rem;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.map iframe {
-  width: 100%;
-  border: 0;
-  border-radius: 10px;
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-/* ===== Footer ===== */
-.footer {
-  background-color: #176d66;
-  color: #ffffff;
-  padding: 2rem 1rem;
+.contact-item img {
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+}
+
+.contact-item strong {
+  display: block;
+  color: #176d66;
+  margin-bottom: 0.25rem;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.contact-map {
+  flex: 1 1 500px;
+  min-height: 300px;
+}
+
+.section-title {
   text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
 }
 
-.footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.footer .socials a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 0.75rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer .socials a:hover {
-  color: #cccccc;
-}
 
 /* ===== Botones primarios (uniforme para <a> y <button>) ===== */
 .btn-primary,
@@ -275,6 +301,87 @@ button.btn-primary {
 button.btn-primary:hover {
   background-color: #134f4a;
 }
+
+.testimonial {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-content p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.testimonial-content span {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* ===== Footer ===== */
+
+.footer {
+  background-color: #176d66;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  height: 90px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #cccccc;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #dddddd;
+  margin-top: 0.5rem;
+}
+
+
 
 
 
